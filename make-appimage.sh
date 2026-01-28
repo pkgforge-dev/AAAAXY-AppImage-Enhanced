@@ -17,6 +17,7 @@ quick-sharun /usr/bin/aaaaxy
 
 # Add SDL gamecontroller database
 wget --retry-connrefused --tries=30 "https://github.com/divVerent/aaaaxy/releases/download/v${VERSION}/sdl-gamecontrollerdb-for-aaaaxy-v${VERSION}.zip" -O /tmp/sdldb.zip
+mkdir -p ./AppDir/share/AAAAXY-sdlgamecontrollerdb
 unzip /tmp/sdldb.zip  -d ./AppDir/share/AAAAXY-sdlgamecontrollerdb
 echo 'SDL_GAMECONTROLLERCONFIG=${SHARUN_DIR}/share/AAAAXY-sdlgamecontrollerdb'
 
