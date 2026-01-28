@@ -4,9 +4,9 @@ set -eu
 
 ARCH=$(uname -m)
 
-echo "Installing package dependencies..."
-echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm pipewire-audio
+# echo "Installing package dependencies..."
+# echo "---------------------------------------------------------------"
+# pacman -Syu --noconfirm PACKAGENAME
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
