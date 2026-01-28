@@ -11,7 +11,6 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=https://raw.githubusercontent.com/divVerent/aaaaxy/4fc3e4a1448e402b0c948b318b46f54d873c1573/aaaaxy.svg
 export DESKTOP=/usr/share/applications/aaaaxy.desktop
 export DEPLOY_OPENGL=1
-export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/aaaaxy
