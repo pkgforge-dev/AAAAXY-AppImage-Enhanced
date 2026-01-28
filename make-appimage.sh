@@ -2,10 +2,6 @@
 
 set -eu
 
-find /usr -name gamecontrollerdb.txt
-find /etc -name gamecontrollerdb.txt
-exit 1
-
 ARCH=$(uname -m)
 VERSION=$(pacman -Q aaaaxy | awk '{print $2; exit}')
 export ARCH VERSION
