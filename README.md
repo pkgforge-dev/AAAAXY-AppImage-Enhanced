@@ -16,6 +16,10 @@
 
 </div>
 
+> [!CAUTION]
+> This app can have an issue with ALSA audio backend on some systems, not being able to run, see this issue:
+> https://github.com/divVerent/aaaaxy/issues/422
+
 ---
 
 Enhanced AppImage compared to the upstream one, made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it easy and reliable to turn any binary into a portable package without using containers or similar tricks. 
