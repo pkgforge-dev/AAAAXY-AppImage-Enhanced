@@ -17,7 +17,7 @@
 </div>
 
 > [!CAUTION]
-> This app can have an issue with ALSA audio backend on some systems, not being able to run, see this issue:
+> This app can have an issue with ALSA audio backend on some systems, not being able to run, see this issue:  
 > https://github.com/divVerent/aaaaxy/issues/422
 
 ---
