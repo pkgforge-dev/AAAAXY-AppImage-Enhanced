@@ -17,10 +17,10 @@ export DEPLOY_PIPEWIRE=1
 quick-sharun /usr/bin/aaaaxy
 
 # Add SDL gamecontroller database
-wget --retry-connrefused --tries=30 "https://github.com/divVerent/aaaaxy/releases/download/v${VERSION%%-*}/sdl-gamecontrollerdb-for-aaaaxy-v${VERSION%%-*}.zip" -O /tmp/sdldb.zip
-mkdir -p ./AppDir/share/AAAAXY-sdlgamecontrollerdb
-unzip /tmp/sdldb.zip  -d ./AppDir/share/AAAAXY-sdlgamecontrollerdb
-echo 'SDL_GAMECONTROLLERCONFIG=${SHARUN_DIR}/share/AAAAXY-sdlgamecontrollerdb' >> ./AppDir/.env
+mkdir -p /tmp/sdldb
+wget --retry-connrefused --tries=30 "https://github.com/divVerent/aaaaxy/releases/download/v${VERSION%%-*}/sdl-gamecontrollerdb-for-aaaaxy-v${VERSION%%-*}.zip" -O /tmp/sdldb/sdldb.zip
+unzip /tmp/sdldb/sdldb.zip -d /tmp/sdldb
+cp -v /tmp/sdldb/third_party/SDL_GameControllerDB/assets/input/gamecontrollerdb.txt ./AppDir/bin/gamecontrollerdb.txt
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
