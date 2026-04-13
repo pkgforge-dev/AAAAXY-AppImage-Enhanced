@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 VERSION=$(pacman -Q aaaaxy | awk '{print $2; exit}')
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.bg.hook"
+export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://raw.githubusercontent.com/divVerent/aaaaxy/4fc3e4a1448e402b0c948b318b46f54d873c1573/aaaaxy.svg
 export DESKTOP=/usr/share/applications/aaaaxy.desktop
